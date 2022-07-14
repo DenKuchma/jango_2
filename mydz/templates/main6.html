@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="padding: 30px; background-color: antiquewhite"> Main6 page!
+    {% if article_number|divisibleby:2%}
+    <div style="text-align: center">Article nubmer ({{article_number}}) is even <br> {% include 'slugText.html' %}</div>
+    {% else %}
+    <div style="text-align: center">Article nubmer ({{article_number}}) is odd <br> {% include 'slugText.html' %}</div>
+    {% endif %}
+</div>
+{% endblock %}
