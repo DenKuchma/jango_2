@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="padding: 30px; background-color: antiquewhite"> Main page!</div>
+<div style="background-color: brown">
+<a href="{% url 'main4' random_int %}">Random article</a>
+<br>
+<a href="{% url 'main6' random_int random_str %}">Random article with slug</a>
+<br>
+</div>
+{% endblock %}
